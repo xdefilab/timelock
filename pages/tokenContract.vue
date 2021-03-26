@@ -50,7 +50,7 @@ import { IABIFunction, ITokenContract } from '~/timelock/interface'
 import TimelockHelper from '~/timelock/timelock'
 import DataStorage from '~/timelock/dataStorage'
 import { delay_offset } from '~/timelock/constants'
-import ethers from 'ethers'
+import { ethers } from 'ethers'
 import ErrorHelper from '~/timelock/error'
 
 @Component

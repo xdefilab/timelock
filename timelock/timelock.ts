@@ -1,5 +1,5 @@
 import EthereumProvider from './provider';
-import ethers from 'ethers';
+import { ethers } from 'ethers';
 import timelockAbi from './abi/timelock-abi.json';
 import { ITimelockTransaction } from './interface';
 import { timelock_address, contract_address, contract_abi_file} from './constants'
