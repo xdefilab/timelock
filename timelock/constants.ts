@@ -1,55 +1,38 @@
 /**
  * timelock contract address
  */
-export const contract_address : any = {
-    3: {
-        'unitroller': '0x52Ab60E7F463B73C6A90ee116dBB18ac61DC63FF',
-        'comptroller': '0x52Ab60E7F463B73C6A90ee116dBB18ac61DC63FF',
-        'cToken1': '', 
-        'cToken2': '', 
-        'cTokenn': ''
-    },
+export const contract_address: any = {
     1: {
-        'unitroller': '0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B',
-        'comptroller': '0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B',
-        'cToken1': '', 
-        'cToken2': '', 
-        'cTokenn': ''
+        'xdexfarm': '0x7f478b6c313cAE4d36c1A6c0FB7c366b441BDE58',
+        'xdexconfig': '0xcb2978a5DC9f6B68295E93D53a74EA2CF66265dC',
     }
 }
 
 /**
  * contract abi file name
  */
-export const contract_abi_file : any = {
-    'unitroller': 'unitroller-abi.json',
-    'comptroller': 'comptroller-abi.json',
-    'cToken1': 'cToken-abi.json', 
-    'cToken2': 'cToken-abi.json', 
-    'cTokenn': 'cToken-abi.json'
+export const contract_abi_file: any = {
+    'xdexfarm': 'xdex-farm-abi.json',
+    'xdexconfig': 'xdex-config-abi.json',
 }
 
 /**
  * deplay Offset, unit: seconds
  */
-export const delay_offset = 300;
+export const delay_offset = 86400;
 
 /**
  * Current timelock address
  */
-export const timelock_address : any = {
-    1: '0x6d903f6003cca6255D85CcA4D3B5E5146dC33925',  
-    3: '0x4168FE8179C5e99074068244413909F40c4301B2'
+export const timelock_address: any = {
+    1: '0xaf1A9b15c90087F4223a9d637b831636A1eEf64e',
 }
 
 /**
  * contract timelock queue transaction functions
  */
-export const queue_functions : any = {
-    'unitroller': ['_acceptAdmin', '_setPendingAdmin', '_setPendingImplementation'],
-    'comptroller': ['_become', '_setBorrowPaused', '_setMiningBuff', '_setCompRate', '_setMintPaused', '_supportMarket', '_dropCompMarket', '_setPriceOracle', '_setCollateralFactor'],
-    'cToken1': ['_acceptAdmin', '_setReserveFactor'],
-    'cToken2': ['_acceptAdmin', '_setReserveFactor'],
-    'cTokenn': ['_acceptAdmin', '_setReserveFactor']
+export const queue_functions: any = {
+    'xdexfarm': ['addPool', 'setLpFactor'],
+    'xdexconfig': ['updateFarm'],
 }
 
