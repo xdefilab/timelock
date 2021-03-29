@@ -9,7 +9,7 @@ declare module 'vue/types/vue' {
 export default ({ app, store }: any) => {
   Vue.filter('parseLocalDateTime', function (value: number) {
     const dt = new Date(value * 1000);
-    return dt.toUTCString();
+    return dt.toLocaleString();
   })
 
   const addressFormat = (value: string, Digits: number = 4) => {
